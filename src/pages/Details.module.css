@@ -1,0 +1,45 @@
+/* Details.module.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+  
+  .artImage {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .artTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    font-family: var(--font);
+  }
+  
+  .artDescription {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+    font-family: var(--font);
+    font-weight: 200;
+  }
+  
+  .artInfo {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+    font-family: var(--font);
+  }
+  
+  .artLikes {
+    font-weight: 500;
+    color: #ff6347;
+    font-family: var(--font);
+  }
+  

@@ -1,0 +1,128 @@
+/* Search.module.css */
+
+.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.title {
+  padding-left: 1rem;
+  font-family: var(--font);
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.searchBox {
+
+  margin-right: 1rem;
+  max-width: 200px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--dark-blue);
+  border-radius: 8px;
+}
+
+
+.gallery {
+  columns: 3; 
+  column-gap: 16px; 
+  margin-top: 6rem; 
+}
+
+.artItem {
+  width: 100%; 
+  margin-bottom: 16px; 
+  break-inside: avoid; 
+  border-radius: 8px;
+  padding: 0.3rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+.artItem:hover{
+  width: 100%;
+  height: auto;
+  display: block; 
+  transform: scale(1.03); 
+  filter: brightness(0.7); 
+}
+
+
+
+
+
+
+.pageNav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+  z-index: 100;
+}
+
+.pageNav button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pageNav button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pageNav button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.pageNav span {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+@media (min-width: 375px) and (max-width: 765px) {
+  .gallery {
+    columns: 2; 
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  .gallery {
+    columns: 3; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    columns: 4; 
+  }
+}
