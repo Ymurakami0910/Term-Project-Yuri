@@ -7,7 +7,8 @@ import Button from "../components/button.jsx";
 import Footer from "../components/footer.jsx"
 import Search from "./Search.jsx";
 
-const Home = () => {
+
+function Home() {
 
   const navigate = useNavigate();
 
@@ -42,13 +43,11 @@ const Home = () => {
           </div>
 
           <div className="button-box container">
-          <Button label="View Gallery" onClick={() => navigate("/")} />
+          <Button label="View Gallery" onClick={() => navigate("/gallery")} />
           <Button label="Get Inspired" onClick={() => navigate("search")} />
           </div>
           
         </section>
-
-
         <Footer/>
         
 

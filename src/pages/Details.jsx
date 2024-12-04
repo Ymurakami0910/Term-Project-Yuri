@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate} from 'react-router-dom';
-import styles from './Details.module.css'; // CSS Module をインポート
+import styles from './Details.module.css'; 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function Details() {
   const navigate = useNavigate(); 
@@ -33,7 +36,7 @@ function Details() {
         <strong>Photographer:</strong> {art.user.name}
       </p>
       <p className={styles.artLikes}>
-        <strong>Likes:</strong> {art.likes}
+        <strong><FontAwesomeIcon icon={faHeart} />Likes:</strong> {art.likes}
       </p>
     </div>
   );

@@ -1,0 +1,81 @@
+{
+    "westernArtists": [
+      {
+        "profilePic": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRttVvhXl1Rm-wfUvuqfkcWzfZzH2YjSqc6wxnzmfDQvN9gmxxgPdMeL4xqCfAiZ7LqujMu2Iq75x6SJY86RivVrw",
+        "name": "Vincent van Gogh",
+        "quote": "I dream of painting and then I paint my dream.",
+        "homeCountry": "Netherlands",
+        "bornYear": 1853,
+        "diedYear": 1890,
+        "artworks": [
+          {
+            "title": "The Courtesan",
+            "url": "https://example.com/van-gogh-the-courtesan.jpg"
+          },
+          {
+            "title": "Japanese Bridge",
+            "url": "https://example.com/van-gogh-japanese-bridge.jpg"
+          },
+          {
+            "title": "The Flowering Plum Tree",
+            "url": "https://example.com/van-gogh-flowering-plum-tree.jpg"
+          }
+        ]
+      },
+      {
+        "profilePic": "https://cdn.britannica.com/57/250457-050-342611AD/Claude-Monet-French-Impressionist-painter.jpg",
+        "name": "Claude Monet",
+        "quote": "I would like to paint the way a bird sings.",
+        "homeCountry": "France",
+        "bornYear": 1840,
+        "diedYear": 1926,
+        "artworks": [
+          {
+            "title": "Woman with a Parasol",
+            "url": "https://example.com/monet-woman-with-a-parasol.jpg"
+          },
+          {
+            "title": "The Japanese Bridge",
+            "url": "https://example.com/monet-japanese-bridge.jpg"
+          }
+        ]
+      },
+      {
+        "profilePic": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Munch_SelfBurningCigarette.jpg",
+        "name": "Edvard Munch",
+        "quote": "I was born with the desire to paint the soul of people.",
+        "homeCountry": "Norway",
+        "bornYear": 1863,
+        "diedYear": 1944,
+        "artworks": [
+          {
+            "title": "The Dance of Life",
+            "url": "https://example.com/munch-dance-of-life.jpg"
+          },
+          {
+            "title": "The Scream",
+            "url": "https://example.com/munch-the-scream.jpg"
+          }
+        ]
+      },
+      {
+        "profilePic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Whistler_Selbstportr%C3%A4t.jpg/1200px-Whistler_Selbstportr%C3%A4t.jpg",
+        "name": "James Whistler",
+        "quote": "Art is the expression of the soul, and it speaks its own language.",
+        "homeCountry": "United States",
+        "bornYear": 1834,
+        "diedYear": 1903,
+        "artworks": [
+          {
+            "title": "Nocturne in Blue and Gold",
+            "url": "https://example.com/whistler-nocturne-blue-gold.jpg"
+          },
+          {
+            "title": "Symphony in White",
+            "url": "https://example.com/whistler-symphony-white.jpg"
+          }
+        ]
+      }
+    ]
+  }
+  

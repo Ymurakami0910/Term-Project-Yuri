@@ -1,0 +1,77 @@
+{
+    "japaneseArtists": [
+      {
+        "profilePic": "https://example.com/hiroshi-yoshida-profile.jpg",
+        "name": "Hiroshi Yoshida",
+        "quote": "The world of art is vast, and I want to explore every corner of it.",
+        "homeCountry": "Japan",
+        "bornYear": 1876,
+        "diedYear": 1950,
+        "artworks": [
+          {
+            "title": "The Pine Tree of Takanawa",
+            "url": "https://example.com/yoshida-pine-tree-takanawa.jpg"
+          },
+          {
+            "title": "The Temple of the Golden Pavilion",
+            "url": "https://example.com/yoshida-temple-golden-pavilion.jpg"
+          }
+        ]
+      },
+      {
+        "profilePic": "https://example.com/kawase-hokusai-profile.jpg",
+        "name": "Kawase Hokusai",
+        "quote": "The spirit of nature is always greater than the artist's perception of it.",
+        "homeCountry": "Japan",
+        "bornYear": 1760,
+        "diedYear": 1849,
+        "artworks": [
+          {
+            "title": "The Great Wave off Kanagawa",
+            "url": "https://example.com/hokusai-great-wave-kanagawa.jpg"
+          },
+          {
+            "title": "Mount Fuji in Clear Weather",
+            "url": "https://example.com/hokusai-mount-fuji-clear-weather.jpg"
+          }
+        ]
+      },
+      {
+        "profilePic": "https://example.com/oka-shikanosuke-profile.jpg",
+        "name": "Oka Shikanosuke",
+        "quote": "Art must transcend the mere physical and reach the soul.",
+        "homeCountry": "Japan",
+        "bornYear": 1898,
+        "diedYear": 1978,
+        "artworks": [
+          {
+            "title": "The Chrysanthemum",
+            "url": "https://example.com/oka-chrysanthemum.jpg"
+          },
+          {
+            "title": "Early Spring",
+            "url": "https://example.com/oka-early-spring.jpg"
+          }
+        ]
+      },
+      {
+        "profilePic": "https://example.com/uchida-masao-profile.jpg",
+        "name": "Uchida Masao",
+        "quote": "The true artist is a humble observer, capturing the beauty of life.",
+        "homeCountry": "Japan",
+        "bornYear": 1916,
+        "diedYear": 2008,
+        "artworks": [
+          {
+            "title": "Morning Mist",
+            "url": "https://example.com/uchida-morning-mist.jpg"
+          },
+          {
+            "title": "The Farmers' Day",
+            "url": "https://example.com/uchida-farmers-day.jpg"
+          }
+        ]
+      }
+    ]
+  }
+  
