@@ -1,0 +1,21 @@
+/* Add styles for the gallery and loader */
+  .gallery {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    margin: 20px; /* Add some margin */
+    padding-bottom: 100px; /* Ensure there is enough space for scrolling */
+  }
+  
+  .art-item {
+    margin-bottom: 20px;
+  }
+  
+  .art-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+  

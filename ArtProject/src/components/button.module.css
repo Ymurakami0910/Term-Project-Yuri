@@ -1,0 +1,63 @@
+/* Button Box
+.btnBox {
+    position: absolute; /* Positions button box relative to its parent container */
+    /* transform: translate(-50%, -50%); */
+    /* top: 65%; Increase this value to move the button lower */
+    /* left: 50%; Keeps the button horizontally centered */
+    /* display: flex; */
+    /* justify-content: center; Centers content inside the box */
+    /* align-items: center; Aligns content vertically inside the box */
+/* } */ 
+
+
+
+/* Button Styles */
+.primaryButton {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 78px;
+    line-height: 78px;
+    font-size: 24px;
+    border-radius: 39px;
+    text-decoration: none;
+    background-color: #364f6b;
+    text-align: center;
+    transition: 0.2s;
+    color: #fbfbfb;
+    border: none;
+    font-family: var(--font);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.primaryButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 78px;
+    border-radius: 39px;
+    z-index: -1;
+    background: inherit;
+    box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+}
+
+/* Button Glow Animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+    }
+    100% {
+        box-shadow: 0 0 2em #ffffff, 0 0 1.5em rgba(255, 255, 255, 0.5) inset;
+    }
+}
+
+@keyframes glow-reverse {
+    0% {
+        box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+    }
+    100% {
+        box-shadow: 0 0 1.5em #ff6f61, 0 0 1em rgba(255, 255, 255, 0.5) inset;
+    }
+}

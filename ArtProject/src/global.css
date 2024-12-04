@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Fredoka:wght@300..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --font:"Edu AU VIC WA NT Pre", cursive;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll; /* Enable scrolling */
+  }
+
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #A3BFCA;
+    overflow: hidden;
+
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Title */
+h1 {
+    font-family: var(--font);
+    font-size: 2.5em;
+}
+p{
+   font-family: "Open Sans", sans-serif; 
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(../src/assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 300px 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+
+/* Intro Section */
+.intro p {
+    font-size: 2rem;
+    margin: 20px 0; /* Adds spacing around the text */
+}
+
+
+
+/* Animation for glow effect */
+@-webkit-keyframes glow {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes glow-reverse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes glow-reverse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    gap:3rem;
+}
+
+
+  

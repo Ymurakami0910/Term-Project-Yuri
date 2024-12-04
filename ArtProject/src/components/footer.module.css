@@ -1,0 +1,11 @@
+/* Footer Styles */
+.footer {
+    height: 150px;
+    background-image: url(../src/assets/wave.jpg);
+    background-repeat: repeat-x;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures footer is above other content */
+}
