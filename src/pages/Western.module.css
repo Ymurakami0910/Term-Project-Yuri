@@ -1,8 +1,10 @@
-ArtistSlider.module.css
+
 .container {
     margin: 0 auto;
     padding: 20px;
+    gap: 20px;
     display: flex;
+    align-items: center;
   }
   
   .card {

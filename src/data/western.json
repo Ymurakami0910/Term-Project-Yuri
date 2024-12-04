@@ -10,17 +10,18 @@
         "artworks": [
           {
             "title": "The Courtesan",
-            "url": "https://example.com/van-gogh-the-courtesan.jpg"
+            "url": "https://lh3.googleusercontent.com/ci/AL18g_Rg8yLwfE4t0F_J2JL3hWs3URnvbpLv2SkP9PdpmpRNYWwGrtqHKETne4hBYlgfThcgVdrIEg=s1200"
           },
           {
             "title": "Japanese Bridge",
-            "url": "https://example.com/van-gogh-japanese-bridge.jpg"
+            "url": "https://www.vangoghstudio.com//Files/6/102000/102147/ProductPhotos/Source/1807006122.jpg"
           },
           {
             "title": "The Flowering Plum Tree",
-            "url": "https://example.com/van-gogh-flowering-plum-tree.jpg"
+            "url": "https://m.media-amazon.com/images/I/812drLqOPYL.jpg"
           }
-        ]
+        ],
+        "influencesFromJapan": "Van Gogh was deeply influenced by Japanese ukiyo-e prints, especially during his time in Paris. His fascination with Japanese art is evident in his use of bold colors, distinct brushwork, and asymmetrical compositions. Works like 'The Courtesan' and 'The Flowering Plum Tree' reflect his admiration for Japanese aesthetics, particularly the emphasis on nature and the stylized portrayal of subjects."
       },
       {
         "profilePic": "https://cdn.britannica.com/57/250457-050-342611AD/Claude-Monet-French-Impressionist-painter.jpg",
@@ -32,13 +33,14 @@
         "artworks": [
           {
             "title": "Woman with a Parasol",
-            "url": "https://example.com/monet-woman-with-a-parasol.jpg"
+            "url": "https://media.nga.gov/iiif/99758d9d-c10b-4d02-a198-7e49afb1f3a6/full/full/0/default.jpg?attachment_filename=woman_with_a_parasol_-_madame_monet_and_her_son_1983.1.29.jpg"
           },
           {
             "title": "The Japanese Bridge",
-            "url": "https://example.com/monet-japanese-bridge.jpg"
+            "url": "https://media.nga.gov/iiif/0b9cefb5-1ee4-401a-8154-8d4039191a28/full/full/0/default.jpg?attachment_filename=the_japanese_footbridge_1992.9.1.jpg"
           }
-        ]
+        ],
+        "influencesFromJapan": "Monet was inspired by Japanese gardens and the aesthetics of Japan, which he incorporated into his work, particularly in his depiction of water lilies and the Japanese bridge. Monet's series of works featuring the Japanese bridge at Giverny reveals his admiration for the harmonious relationship between water and plants, a concept central to traditional Japanese art."
       },
       {
         "profilePic": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Munch_SelfBurningCigarette.jpg",
@@ -50,13 +52,14 @@
         "artworks": [
           {
             "title": "The Dance of Life",
-            "url": "https://example.com/munch-dance-of-life.jpg"
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Edvard_Munch_-_The_dance_of_life_%281899-1900%29.jpg"
           },
           {
             "title": "The Scream",
-            "url": "https://example.com/munch-the-scream.jpg"
+            "url": "https://www.edvardmunch.org/assets/img/paintings/the-scream.jpg"
           }
-        ]
+        ],
+        "influencesFromJapan": "While Munch was not directly influenced by Japan in the same way as other Impressionists, there are traces of Japonisme in his use of flat, bold compositions and his focus on the emotional impact of the subject. This can be seen in the linearity and emotional intensity of his works, which echo some aspects of Japanese woodblock prints."
       },
       {
         "profilePic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Whistler_Selbstportr%C3%A4t.jpg/1200px-Whistler_Selbstportr%C3%A4t.jpg",
@@ -68,13 +71,14 @@
         "artworks": [
           {
             "title": "Nocturne in Blue and Gold",
-            "url": "https://example.com/whistler-nocturne-blue-gold.jpg"
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/James_Abbot_McNeill_Whistler_006.jpg"
           },
           {
             "title": "Symphony in White",
-            "url": "https://example.com/whistler-symphony-white.jpg"
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Whistler_James_Symphony_in_White_no_1_%28The_White_Girl%29_1862.jpg/640px-Whistler_James_Symphony_in_White_no_1_%28The_White_Girl%29_1862.jpg"
           }
-        ]
+        ],
+        "influencesFromJapan": "Whistler was a key figure in the Japonisme movement in Western art. He was greatly influenced by Japanese prints, particularly in his approach to composition, use of color, and the overall aesthetic of simplicity and minimalism. His 'Nocturne' series, with its moody, atmospheric qualities, can be seen as influenced by the Japanese appreciation for subtlety and the beauty of fleeting moments."
       }
     ]
   }

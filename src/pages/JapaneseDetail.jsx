@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import artistData from "./data/western.json"; // western.jsonをインポート
+import artistData from "../data/japanese.json"; 
+import styles from "../pages/WesternDetail.module.css"
 
 
-const WesternDetail = () => {
+const JapaneseDetail = () => {
   const { id } = useParams(); // URLパラメータからidを取得
   const [artist, setArtist] = useState(null);
 
   useEffect(() => {
     // IDに基づいて対応するアーティストデータを取得
-    const selectedArtist = artistData.westernArtists[id];
+    const selectedArtist = artistData.japaneseArtists[id];
     setArtist(selectedArtist); // artist stateにセット
   }, [id]);
 
@@ -19,13 +20,14 @@ const WesternDetail = () => {
 
   return (
     <div>
-      <img src={artist.profilePic} alt={artist.name} />
       <h1>{artist.name}</h1>
-      <p><strong>Quote:</strong> {artist.quote}</p>
+      <img src={artist.profilePic} alt={artist.name} />
       <p><strong>Country:</strong> {artist.homeCountry}</p>
+      <p><strong>Quote:</strong> {artist.quote}</p>
       <p><strong>Born:</strong> {artist.bornYear}</p>
       <p><strong>Died:</strong> {artist.diedYear}</p>
-      <h4>Artworks:</h4>
+      <h2>{artist.influence}</h2>
+      <h3>Artworks:</h3>
       <ul>
         {artist.artworks.map((art, index) => (
           <li key={index}>
@@ -38,4 +40,4 @@ const WesternDetail = () => {
   );
 };
 
-export default WesternDetail;
+export default JapaneseDetail;
