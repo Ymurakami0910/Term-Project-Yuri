@@ -1,19 +1,25 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom"; // useNavigateをインポート
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import styles from "./header.module.css";
 
+function Header() {
+  const navigate = useNavigate(); // フックでnavigate関数を取得
 
-import Search from "../pages/Search.jsx";
-import styles from './header.module.css'; // Importing the CSS module
+  const handleBackClick = () => {
+    navigate(-1); // 前のページに戻る
+  };
 
-function Header () {
-
-
-
-
-    return (
-        <header>
-    
-        </header>
-    );
+  return (
+    <header className={styles.header}>
+      <button onClick={handleBackClick} className={styles.backButton}>
+        <FontAwesomeIcon icon={faArrowLeft} className={styles.icon} />
+        Back
+      </button>
+      <h1 className={styles.title}>Gallery</h1>
+    </header>
+  );
 }
 
-export default Header ;
+export default Header;

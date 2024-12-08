@@ -33,12 +33,12 @@ function Home() {
 
   return (
     <>  
-    <Header/>
         <section className="hero">
           <div className="intro container">
+            <h1>Japonisme</h1>
             <p>
               Japanese art, especially ukiyo-e prints, influenced many key
-              Impressionist artists, such as Monet, Van Gogh, and Degas.
+              Impressionist artists, such as Van Gogh, and Monet...
             </p>
           </div>
 

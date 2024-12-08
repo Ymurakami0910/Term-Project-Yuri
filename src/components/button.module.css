@@ -1,33 +1,25 @@
-/* Button Box
-.btnBox {
-    position: absolute; /* Positions button box relative to its parent container */
-    /* transform: translate(-50%, -50%); */
-    /* top: 65%; Increase this value to move the button lower */
-    /* left: 50%; Keeps the button horizontally centered */
-    /* display: flex; */
-    /* justify-content: center; Centers content inside the box */
-    /* align-items: center; Aligns content vertically inside the box */
-/* } */ 
 
 
-
-/* Button Styles */
+/* --- Button Styles --- */
 .primaryButton {
     display: block;
     position: relative;
-    width: 200px;
-    height: 78px;
-    line-height: 78px;
-    font-size: 24px;
-    border-radius: 39px;
+    width: auto;
+    min-width: 150px; 
+    padding: 10px 20px;
+    height: auto;
+    line-height: normal; 
+    font-size: 1.5rem; 
+    border-radius: 50px;
     text-decoration: none;
     background-color: #364f6b;
     text-align: center;
-    transition: 0.2s;
+    transition: 0.3s;
     color: #fbfbfb;
     border: none;
-    font-family: var(--font);
+    font-family: var(--font, Arial, sans-serif);
     animation: glow 2s ease-in-out infinite alternate;
+    cursor: pointer;
 }
 
 .primaryButton::before {
@@ -35,15 +27,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 200px;
-    height: 78px;
-    border-radius: 39px;
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50px;
     z-index: -1;
     background: inherit;
     box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
 }
 
-/* Button Glow Animation */
+/* --- Button Glow Animation --- */
 @keyframes glow {
     0% {
         box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
@@ -59,5 +51,31 @@
     }
     100% {
         box-shadow: 0 0 1.5em #ff6f61, 0 0 1em rgba(255, 255, 255, 0.5) inset;
+    }
+}
+
+@media (max-width: 768px) {
+    .primaryButton {
+        font-size: 1rem; 
+        padding: 8px 15px; 
+        min-width: 120px; 
+    }
+
+    .primaryButton::before {
+        box-shadow: 0 0 1.2em #364f6b, 0 0 0.4em rgba(255, 255, 255, 0.4) inset;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .primaryButton {
+        font-size: 1rem;
+        padding: 6px 10px; 
+        min-width: 100px; 
+        border-radius: 40px; 
+    }
+
+    .primaryButton::before {
+        box-shadow: 0 0 1em #364f6b, 0 0 0.3em rgba(255, 255, 255, 0.3) inset;
     }
 }

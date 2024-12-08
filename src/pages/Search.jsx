@@ -1,24 +1,28 @@
 import React, { useState, useEffect } from "react";
 import Button from "../components/button";
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate, Link } from "react-router-dom";
 import styles from "./Search.module.css";
 
 function ArtSearch() {
-// 
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  };
+
   const [arts, setArts] = useState([]);
-// default search term
-  const [searchTerm, setSearchTerm] = useState("Japanese");
-  
-// state for favorite
-
-  const [fav,setFavs] = useState()
-
-// state for page
+  const [searchTerm, setSearchTerm] = useState("Japanese"); // デフォルトの検索ワード
+  const [searchInput, setSearchInput] = useState(""); // 入力中の値
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-
-  // how many items each page load
   const itemsPerPage = 15;
+
+  const handleSearch = () => {
+    setSearchTerm(searchInput); // 入力された値で検索実行
+    setPage(1); // ページをリセット
+  };
 
   useEffect(() => {
     if (searchTerm) {
@@ -28,15 +32,12 @@ function ArtSearch() {
         .then((response) => response.json())
         .then((data) => {
           setArts(data.results);
-          // math for the total pages 
           setTotalPages(Math.ceil(data.total / itemsPerPage));
         })
-        // just in case console if the api catch a error
         .catch((error) => console.log("Error fetching data:", error));
     }
   }, [searchTerm, page]);
 
-  // page counter 
   const handleNextPage = () => {
     if (page < totalPages) {
       setPage(page + 1);
@@ -49,31 +50,36 @@ function ArtSearch() {
     }
   };
 
-  // actual rendering part 
-
   return (
     <>
       <header className={styles.bar}>
         <h1 className={styles.title}>Art Explorer</h1>
-        <input
-          type="text"
-          className={styles.searchBox}
-          placeholder="Search for art"
-          value={searchTerm}
-          onChange={(event) => setSearchTerm(event.target.value)}
-        />
+        <div className={styles.searchContainer}>
+          <input
+            type="text"
+            className={styles.searchBox}
+            placeholder="Search for art"
+            value={searchInput}
+            onChange={(event) => setSearchInput(event.target.value)}
+          />
+          <button className={styles.searchButton} onClick={handleSearch}>
+            Search
+          </button>
+        </div>
       </header>
-      <section className="container">
-        <div className={styles.gallery}>
-          {arts.map((art) => (
-            <Link to={`/art/${art.id}`}>
-              <img
-                className={styles.artItem}
-                src={art.urls.small}
-                alt={art.alt_description}
-              />
-            </Link>
-          ))}
+      <section className="bg-2">
+        <div className="container">
+          <div className={styles.gallery}>
+            {arts.map((art) => (
+              <Link key={art.id} to={`/art/${art.id}`}>
+                <img
+                  className={styles.artItem}
+                  src={art.urls.small}
+                  alt={art.alt_description}
+                />
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
       <section className="container">

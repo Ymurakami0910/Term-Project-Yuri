@@ -1,25 +1,6 @@
 {
   "japaneseArtists": [
     {
-      "profilePic": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Yoshida-Hiroshi_1949.jpg",
-      "name": "Hiroshi Yoshida",
-      "quote": "The world of art is vast, and I want to explore every corner of it.",
-      "homeCountry": "Japan",
-      "bornYear": 1876,
-      "diedYear": 1950,
-      "artworks": [
-        {
-          "title": "The Pine Tree of Takanawa",
-          "url": "https://example.com/yoshida-pine-tree-takanawa.jpg"
-        },
-        {
-          "title": "The Temple of the Golden Pavilion",
-          "url": "https://example.com/yoshida-temple-golden-pavilion.jpg"
-        }
-      ],
-      "influence": "Hiroshi Yoshida is known for his exceptional ability to blend traditional Japanese woodblock printing techniques with Western influences. His exploration of landscapes and temples demonstrated his deep appreciation for both Japanese nature and Western perspectives, particularly the use of light and color. Yoshida's work was influential in promoting the Shin-hanga (New Print) movement, which revitalized the traditional ukiyo-e art form by incorporating modern elements and broader global appeal."
-    },
-    {
       "profilePic": "https://m.media-amazon.com/images/I/71Vkb3xQsfL._AC_UF894,1000_QL80_.jpg",
       "name": "Katsushika Hokusai",
       "quote": "The spirit of nature is always greater than the artist's perception of it.",
@@ -33,7 +14,7 @@
         },
         {
           "title": "Mount Fuji in Clear Weather",
-          "url": "https://example.com/hokusai-mount-fuji-clear-weather.jpg"
+          "url": "https://uploads8.wikiart.org/images/katsushika-hokusai/fuji-mountains-in-clear-weather-1831.jpg!Large.jpg"
         }
       ],
       "influence": "Katsushika Hokusai is one of Japan's most iconic artists, whose work transcended borders and influenced countless Western artists. His famous woodblock print, 'The Great Wave off Kanagawa,' became a symbol of Japanese art worldwide. Hokusai's mastery in portraying natural forces and his innovative techniques had a profound impact on the Impressionist movement in Europe, particularly inspiring artists like Claude Monet and Vincent van Gogh."

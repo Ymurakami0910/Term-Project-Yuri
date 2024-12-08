@@ -5,14 +5,27 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+
+  
+.backButton {
+  margin-left: 1rem;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  text-decoration: none;
 }
 
 .title {
@@ -24,7 +37,6 @@
 }
 
 .searchBox {
-
   margin-right: 1rem;
   max-width: 200px;
   padding: 0.5rem;
@@ -35,6 +47,7 @@
 
 
 .gallery {
+  padding-top: 2rem;
   columns: 3; 
   column-gap: 16px; 
   margin-top: 6rem; 

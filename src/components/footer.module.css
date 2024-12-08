@@ -2,7 +2,8 @@
 .footer {
     height: 150px;
     background-image: url(../src/assets/wave.jpg);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: fixed;
     bottom: 0;
     left: 0;
