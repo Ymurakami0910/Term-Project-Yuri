@@ -4,8 +4,15 @@ import Button3 from "../components/button3";
 import { useNavigate ,Link } from "react-router-dom";
 import styles from "./Search.module.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 function ArtSearch() {
   const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1); // 前のページに戻る
+  };
 
   const [arts, setArts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("Japanese"); // デフォルトの検索ワード
@@ -53,20 +60,28 @@ function ArtSearch() {
 
   return (
     <>
-      <header className={styles.bar}>
-        <h1 className={styles.title}>Art Explorer</h1>
-        <button onClick={() => navigate("/inspo")}>Lists</button>
-        <div className={styles.searchContainer}>
-          <input
-            type="text"
-            className={styles.searchBox}
-            placeholder="Search for art"
-            value={searchInput}
-            onChange={(event) => setSearchInput(event.target.value)}
-          />
-          <Button2 label="search" onClick={handleSearch} />
-        </div>
-      </header>
+  <header className={styles.bar}>
+    <div className={styles.leftSection}>
+      <button onClick={handleBackClick} className={styles.backButton}>
+        <FontAwesomeIcon icon={faArrowLeft} className={styles.icon} />
+      </button>
+      <h1 className={styles.title}>Art Explorer</h1>
+    </div>
+    <div className={styles.searchContainer}>
+  <input
+    type="text"
+    className={styles.searchBox}
+    placeholder="Search for art"
+    value={searchInput}
+    onChange={(event) => setSearchInput(event.target.value)}
+  />
+  <Button2 label="Search" onClick={handleSearch} />
+  <button onClick={() => navigate("/inspo")} className={styles.listButton}>
+    Lists
+  </button>
+</div>
+
+  </header>
       <section className="bg-2">
         <div className="container">
           <div className={styles.gallery}>

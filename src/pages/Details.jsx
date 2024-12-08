@@ -66,7 +66,9 @@ function Details() {
               {inspo.includes(art.id)
                 ? "Remove from your board"
                 : "Add to your board"}
-            </button>
+        </button>
+
+        <button onClick={() => navigate("/inspo")}>Lists</button>
 
 
       <img className={styles.artImage} src={art.urls.regular} alt={art.alt_description} />

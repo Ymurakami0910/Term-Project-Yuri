@@ -5,31 +5,32 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 2rem; /* Compact padding for better spacing */
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 100;
 }
 
-  
-.backButton {
-  margin-left: 1rem;
+.leftSection {
+  display: flex;
+  flex-basis: 70%;
   align-items: center;
-  background: none;
+  gap: 1rem; 
+}
+
+.backButton {
   border: none;
-  color: #555;
-  font-size: 1rem;
+  background: none;
   cursor: pointer;
-  transition: color 0.2s;
-  text-decoration: none;
+}
+
+.icon {
+  font-size: 1.5rem; 
+  color: #333; 
 }
 
 .title {
-  padding-left: 1rem;
   font-family: var(--font);
   color: var(--dark-blue);
   font-size: 1.5rem;
@@ -38,16 +39,28 @@
 
 .searchContainer {
   display: flex;
+  gap: 5px;
 }
 
 .searchBox {
-  margin-right: 1rem;
-  max-width: 200px;
-  padding: 0.5rem;
+  flex: 1; /* Allows the search box to take the remaining space */
+  max-width: 300px; /* Optional: Sets a max-width for better control */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 1px solid var(--dark-blue);
-  border-radius: 8px;
 }
+
+.listButton {
+
+}
+
+.listButton:hover {
+
+}
+
+
+
 
 
 .gallery {

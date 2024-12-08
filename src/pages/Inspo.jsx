@@ -3,8 +3,14 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import styles from "../pages/Inspo.module.css"
+import Header from "../components/header";
+
 
 function Inspo() {
+  
+
+
+
   const [savedPhotos, setSavedPhotos] = useState([]); // Photo details
   const [inspo, setInspo] = useState(() => {
     const saved = localStorage.getItem("inspo");
@@ -45,21 +51,24 @@ function Inspo() {
 
   return (
     <>
+    <Header/>
+    <section className="container divider">
       <h1>This is my list of inspo</h1>
-      <ul>
+      <div className={styles.galleryX}>
         {savedPhotos.map((art) => (
-          <li key={art.id}>
-            <Link to={`/art/${art.id}`}>
-              <img src={art.urls.small} alt={art.alt_description || "Image"} />
+          <div key={art.id} className="boxNote">
+            <Link className={styles.art} to={`/art/${art.id}`}>
+              <img className={styles.artItemX} src={art.urls.small} alt={art.alt_description || "Image"} />
               <p>{art.alt_description || "No description available"}</p>
             </Link>
             <button onClick={() => toggleInspo(art.id)}>
               <FontAwesomeIcon icon={faMinus} style={{ marginRight: "8px" }} />
               {"Remove from your board"}
             </button>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
+      </section>
     </>
   );
 }

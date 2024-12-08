@@ -17,7 +17,7 @@ function Header() {
         <FontAwesomeIcon icon={faArrowLeft} className={styles.icon} />
         Back
       </button>
-      <h1 className={styles.title}>Gallery</h1>
+      <h1 className={styles.title}>Impressionism & Japanese Art</h1>
     </header>
   );
 }
