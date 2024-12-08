@@ -99,25 +99,7 @@
   z-index: 100;
 }
 
-.pageNav button {
-  background-color: var(--orange);
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
 
-.pageNav button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.pageNav button:hover:not(:disabled) {
-  background-color: #e69500;
-}
 
 .pageNav span {
   font-size: 1rem;

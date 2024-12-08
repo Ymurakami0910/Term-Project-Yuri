@@ -1,0 +1,21 @@
+.button3 {
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+  }
+
+  .button3:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .button3:hover:not(:disabled){
+    background-color: #e69500;
+  }
+

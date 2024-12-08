@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.backLink {
+.backBtn {
   background-color: var(--orange);
   color: #fff;
   border: none;
@@ -15,13 +15,11 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s;
-  
 }
 
-.backLink:hover {
+.backBtn:hover {
   background-color: #e69500;
 }
-
 
 .artImage {
   width: 100%;
