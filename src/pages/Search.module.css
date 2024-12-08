@@ -36,6 +36,10 @@
   font-weight: 300;
 }
 
+.searchContainer {
+  display: flex;
+}
+
 .searchBox {
   margin-right: 1rem;
   max-width: 200px;
@@ -55,6 +59,7 @@
 
 .artItem {
   width: 100%; 
+  display: block;
   margin-bottom: 16px; 
   break-inside: avoid; 
   border-radius: 8px;
@@ -73,9 +78,6 @@
   transform: scale(1.03); 
   filter: brightness(0.7); 
 }
-
-
-
 
 
 
@@ -98,7 +100,7 @@
 }
 
 .pageNav button {
-  background-color: #007bff;
+  background-color: var(--orange);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -114,7 +116,7 @@
 }
 
 .pageNav button:hover:not(:disabled) {
-  background-color: #0056b3;
+  background-color: #e69500;
 }
 
 .pageNav span {

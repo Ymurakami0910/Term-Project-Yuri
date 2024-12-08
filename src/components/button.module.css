@@ -12,7 +12,7 @@
     font-size: 1.5rem; 
     border-radius: 50px;
     text-decoration: none;
-    background-color: #364f6b;
+    background-color: var(--orange);
     text-align: center;
     transition: 0.3s;
     color: #fbfbfb;
@@ -32,25 +32,25 @@
     border-radius: 50px;
     z-index: -1;
     background: inherit;
-    box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.3) inset;
 }
 
 /* --- Button Glow Animation --- */
 @keyframes glow {
     0% {
-        box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+        box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.3) inset;
     }
     100% {
-        box-shadow: 0 0 2em #ffffff, 0 0 1.5em rgba(255, 255, 255, 0.5) inset;
+        box-shadow: 0 0 2em #ffffff, 0 0 1.5em rgba(255, 255, 255, 0.3) inset;
     }
 }
 
 @keyframes glow-reverse {
     0% {
-        box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.5) inset;
+        box-shadow: 0 0 1.3em #364f6b, 0 0 0.5em rgba(255, 255, 255, 0.3) inset;
     }
     100% {
-        box-shadow: 0 0 1.5em #ff6f61, 0 0 1em rgba(255, 255, 255, 0.5) inset;
+        box-shadow: 0 0 1.5em #ff6f61, 0 0 1em rgba(255, 255, 255, 0.3) inset;
     }
 }
 

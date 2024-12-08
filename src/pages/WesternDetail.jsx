@@ -25,7 +25,7 @@ const WesternDetail = () => {
     <>
     <Header/>
     <div className={`${styles.container} divider`}>
-      <div className={styles.leftPanel}>
+      <div className={`${styles.leftPanel} boxNote`}>
         <h1 className={styles.name}>{artist.name}</h1>
         <img
           src={artist.profilePic}

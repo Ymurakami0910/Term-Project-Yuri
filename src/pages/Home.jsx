@@ -43,7 +43,7 @@ function Home() {
           </div>
 
           <div className="button-box container">
-          <Button label="View Gallery" onClick={() => navigate("/gallery")} />
+          <Button label="View Gallery" onClick={() => navigate("gallery")} />
           <Button label="Get Inspired" onClick={() => navigate("search")} />
           </div>
           

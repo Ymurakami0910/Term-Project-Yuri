@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Button from "../components/button";
+import Button2 from "../components/button2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate, Link } from "react-router-dom";
@@ -62,9 +63,8 @@ function ArtSearch() {
             value={searchInput}
             onChange={(event) => setSearchInput(event.target.value)}
           />
-          <button className={styles.searchButton} onClick={handleSearch}>
-            Search
-          </button>
+          <Button2 label="search" onClick={handleSearch}/>
+
         </div>
       </header>
       <section className="bg-2">

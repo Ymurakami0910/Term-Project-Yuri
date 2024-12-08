@@ -1,50 +1,60 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import artistData from "../data/western.json"; // western.jsonのインポート
-import styles from './Western.module.css'; // CSSモジュールのインポート
-import Header from '../components/header';
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { gsap } from "gsap";
 
+import Button from "../components/button";
+import Header from "../components/header";
+import Monet from "../assets/thumb-m.jpg";
+import Hokusai from "../assets/thumb-k.jpg";
 
-function Western() {
-  const [artistsData, setArtistsData] = useState([]);
+function Gallery() {
+  const navigate = useNavigate();
 
   useEffect(() => {
-    setArtistsData(artistData.westernArtists);
+    // Animate the left panel
+    gsap.fromTo(
+      ".left-panel",
+      { opacity: 0, x: -50 },
+      { opacity: 1, x: 0, duration: 1, ease: "power2.out", delay: 0.5 }
+    );
+
+    // Animate the right panel
+    gsap.fromTo(
+      ".right-panel",
+      { opacity: 0, x: 50 },
+      { opacity: 1, x: 0, duration: 1, ease: "power2.out", delay: 0.5 }
+    );
   }, []);
 
-  useEffect(() => {
-    gsap.fromTo(
-      ".boxNote", // boxNoteクラスにアニメーションを適用
-      {
-        opacity: 0, // 初期状態で非表示
-        transform: "translateY(100px)", // 下に配置
-      },
-      {
-        opacity: 1, // 表示
-        transform: "translateY(0)", // 元の位置に戻す
-        duration: 1.2, // アニメーションの速度
-        stagger: 0.2, // 各アイテムのアニメーションの間隔を設定（0.2秒ごと）
-        ease: "power3.out", // イージング
-      }
-    );
-  }, []); // 初回レンダリング時に一度だけ実行
+
 
   return (
     <>
-      <Header/>
-      <div className={`${styles.container} divider`}>
-        {artistsData.map((artist, index) => (
-          <div key={index} className="boxNote">
-            <Link to={`/artist/${index}`} className={styles.link}>
-              <img src={artist.profilePic} alt={artist.name} className={styles.profilePic} />
-              <h1 className={styles.artistName}>{artist.name}</h1>
-            </Link>
+      <Header />
+      <section>
+        <div className="container divider">
+          <h1>The Japanese Influence on Impressionism</h1>
+          <div className="wrap">
+            <div className="left-panel">
+              <Button
+                label="Learn About Western Artists"
+                onClick={() => navigate("/western")}
+              />
+              <img src={Monet} alt="Japanese Bridge" />
+            </div>
+            <div className="right-panel">
+              <img src={Hokusai} alt="Ukiyo-e Hokusai" />
+              <Button
+                label="Learn About Japanese Artists"
+                onClick={() => navigate("/japanese")}
+              />
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
     </>
   );
 }
 
-export default Western;
+export default Gallery;

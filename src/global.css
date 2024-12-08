@@ -6,6 +6,7 @@
 :root {
   --font: "Source Serif 4", serif;
   --dark-blue: #364f6b;
+  --orange :#ff7f50;
 }
 
 body,
@@ -15,8 +16,8 @@ html {
   height: 100%;
   background: white;
   background-image:
-    linear-gradient(90deg, rgba(189, 224, 254, 0.5) 50%, transparent 0),
-    linear-gradient(rgba(173, 216, 230, 0.5) 50%, transparent 0);
+  linear-gradient(90deg, rgba(189, 224, 254, 0.5) 50%, transparent 0),
+  linear-gradient(rgba(173, 216, 230, 0.5) 50%, transparent 0);
   background-size: 30px 30px;
 }
 
@@ -56,6 +57,9 @@ html {
   .container {
     max-width: 100%;
     padding: 0 30px;
+  }
+  .divider {
+    padding-top: 7rem;
   }
 }
 
@@ -110,7 +114,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  color: white;
+  color:var(--dark-blue);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -119,10 +123,12 @@ p {
 }
 
 
+
 /* Intro Section */
 .intro p {
   font-size: 2rem;
   margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -157,6 +163,7 @@ p {
   justify-content: space-between;
   gap: 30px;
   align-items: flex-start;
+  padding-bottom: 3rem;
 }
 
 .left-panel,

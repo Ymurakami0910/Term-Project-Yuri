@@ -1,0 +1,18 @@
+.button2 {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	min-width: 120px;
+	margin: auto;
+	padding: 0.5rem;
+	font-weight: bold;
+	border: 2px solid var(--orange);
+	background: var(--orange);
+	color: #fff;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+.button2:hover {
+	color:var(--orange);
+	background: #fff;
+}

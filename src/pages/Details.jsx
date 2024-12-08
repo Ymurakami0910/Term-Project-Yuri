@@ -24,7 +24,7 @@ function Details() {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} boxNote divider`}>
       <button onClick={() => navigate(-1)} className={styles.backLink}>
         ← Back to gallery
       </button>
