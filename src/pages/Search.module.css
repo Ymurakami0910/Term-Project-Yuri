@@ -14,9 +14,9 @@
 
 .leftSection {
   display: flex;
-  flex-basis: 70%;
+  flex-basis: 65%;
   align-items: center;
-  gap: 1rem; 
+  gap: 0.5rem; 
 }
 
 .backButton {
@@ -43,25 +43,13 @@
 }
 
 .searchBox {
-  flex: 1; /* Allows the search box to take the remaining space */
-  max-width: 300px; /* Optional: Sets a max-width for better control */
+  flex: 1;
+  max-width: 300px; 
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
-
-.listButton {
-
-}
-
-.listButton:hover {
-
-}
-
-
-
-
 
 .gallery {
   padding-top: 2rem;

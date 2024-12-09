@@ -53,10 +53,10 @@ function Inspo() {
     <>
     <Header/>
     <section className="container divider">
-      <h1>This is my list of inspo</h1>
+      <h1>Saved Photos</h1>
       <div className={styles.galleryX}>
         {savedPhotos.map((art) => (
-          <div key={art.id} className="boxNote">
+          <div key={art.id} className={`${styles.card} boxNote`}>
             <Link className={styles.art} to={`/art/${art.id}`}>
               <img className={styles.artItemX} src={art.urls.small} alt={art.alt_description || "Image"} />
               <p>{art.alt_description || "No description available"}</p>
@@ -68,7 +68,7 @@ function Inspo() {
           </div>
         ))}
       </div>
-      </section>
+    </section>
     </>
   );
 }

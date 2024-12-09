@@ -5,10 +5,13 @@
   margin-top: 2rem;
   padding-bottom: 5rem;
 }
+
+.card {
+  min-height: 500px;
+}
 .art:visited{
   color: inherit;
 }
-
 
 .art p {
   text-decoration: none;
@@ -16,17 +19,28 @@
 }
 
 .artItemX {
-  width: 100%;
+  max-width: 300px;
+  height: auto;
   display: block;
   border-radius: 8px;
   padding: 0.3rem;
   background-color: white;
 }
 
+.artItemX img {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
 /* Responsive breakpoints */
 @media (max-width: 1024px) {
   .galleryX {
+    gap: 0px; /* Spacing between items */
     grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+  }
+  .card {
+    min-height: auto;
   }
 }
 

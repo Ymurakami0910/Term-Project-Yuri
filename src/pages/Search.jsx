@@ -3,6 +3,7 @@ import Button2 from "../components/button2";
 import Button3 from "../components/button3";
 import { useNavigate ,Link } from "react-router-dom";
 import styles from "./Search.module.css";
+import ListButton from "../components/button4.module.css"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -76,8 +77,8 @@ function ArtSearch() {
     onChange={(event) => setSearchInput(event.target.value)}
   />
   <Button2 label="Search" onClick={handleSearch} />
-  <button onClick={() => navigate("/inspo")} className={styles.listButton}>
-    Lists
+  <button onClick={() => navigate("/inspo")} className={ListButton.ListButton}>
+    Saved
   </button>
 </div>
 
