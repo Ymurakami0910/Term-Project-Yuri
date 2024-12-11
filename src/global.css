@@ -236,4 +236,17 @@ img {
 	border-top: dotted 10px #fff; 
 }
 
+.boardButton {
+
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+}
+
 

@@ -57,3 +57,10 @@
   font-weight: 400;
   font-family: var(--font);
 }
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

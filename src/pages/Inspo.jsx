@@ -61,7 +61,7 @@ function Inspo() {
               <img className={styles.artItemX} src={art.urls.small} alt={art.alt_description || "Image"} />
               <p>{art.alt_description || "No description available"}</p>
             </Link>
-            <button onClick={() => toggleInspo(art.id)}>
+            <button className="boardButton"onClick={() => toggleInspo(art.id)}>
               <FontAwesomeIcon icon={faMinus} style={{ marginRight: "8px" }} />
               {"Remove from your board"}
             </button>

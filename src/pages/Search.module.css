@@ -107,6 +107,8 @@
   color: #333;
 }
 
+.buttonBox{}
+
 
 @media (min-width: 375px) and (max-width: 765px) {
   .gallery {

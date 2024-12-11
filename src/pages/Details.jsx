@@ -57,8 +57,10 @@ function Details() {
 
       <h1 className={styles.artTitle}>{art.alt_description || 'Untitled'}</h1>
 
-      
-      <button onClick={() => toggleInspo(art.id)}>
+        
+      <img className={styles.artImage} src={art.urls.regular} alt={art.alt_description} />
+      <div className={styles.buttonBox}>
+      <button className='boardButton' onClick={() => toggleInspo(art.id)}>
               <FontAwesomeIcon
                 icon={inspo.includes(art.id) ? faMinus : faPlus}
                 style={{ marginRight: "8px" }}
@@ -68,10 +70,9 @@ function Details() {
                 : "Add to your board"}
         </button>
 
-        <button onClick={() => navigate("/inspo")}>Lists</button>
+        <button className="boardButton"onClick={() => navigate("/inspo")}>Saved Photo List</button>  
+        </div>
 
-
-      <img className={styles.artImage} src={art.urls.regular} alt={art.alt_description} />
       <p className={styles.artDescription}>{art.description || 'No description available.'}</p>
       <p className={styles.artInfo}>
         <strong>Photographer:</strong> {art.user.name}
