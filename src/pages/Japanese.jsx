@@ -1,3 +1,5 @@
+// This is for web interaction corse
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import gakaData from "../data/japanese.json"; 

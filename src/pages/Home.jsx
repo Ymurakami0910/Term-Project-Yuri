@@ -1,7 +1,11 @@
+// This is the home page for web interaction corse and web scripting 
+
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+// for button 
 import gsap from "gsap";
 
+// components
 import Header from "../components/header.jsx";
 import Button from "../components/button.jsx";
 import Footer from "../components/footer.jsx"
@@ -11,7 +15,7 @@ import Search from "./Search.jsx";
 function Home() {
 
   const navigate = useNavigate();
-
+  // gsap for homepage 
   useEffect(() => {
     gsap.from(".btn_box", {
       duration: 1.2,

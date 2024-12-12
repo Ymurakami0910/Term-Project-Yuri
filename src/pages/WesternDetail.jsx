@@ -1,3 +1,5 @@
+// This is for web interaction corse
+
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import artistData from "../data/western.json";

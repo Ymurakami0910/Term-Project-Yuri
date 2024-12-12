@@ -1,7 +1,9 @@
+// This is for web interaction corse
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import artistData from "../data/western.json"; // western.jsonのインポート
-import styles from './Western.module.css'; // CSSモジュールのインポート
+import artistData from "../data/western.json"; 
+import styles from './Western.module.css'; 
 import Header from '../components/header';
 import { gsap } from "gsap";
 
